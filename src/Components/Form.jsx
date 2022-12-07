@@ -38,7 +38,7 @@ const Form = () => {
     if(!isUsernameValid || !isusermailValid){
       setMessage("Por favor verifique su información nuevamente");
     } else {
-      setMessage("Gracias {userName} te contactaremos cuando antes vía mail");
+      setMessage(`Gracias ${userName} te contactaremos cuando antes vía mail`);
       console.log(userName);
       console.log(userMail);
     }

@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Routes/Home";
 import Contact  from "./Routes/Contact";
 import Favs from "./Routes/Favs";
-import {routes} from "./routes";
+import Detail from "./Routes/Detail";
 import {Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -12,9 +12,10 @@ function App() {
       <div className="App">
           <Navbar/>
             <Routes>
-                <Route path={routes.home} element={<Home/>}/>
-                <Route path={routes.contact} element={<Contact/>}/>
-                <Route path={routes.fav} element={<Favs/>}/>
+                <Route path='/home' element={<Home/>}/>
+                <Route path='/contacto' element={<Contact/>}/>
+                <Route path='/fav' element={<Favs/>}/>
+                <Route path='/detail/:id' element={<Detail/>}/>
             </Routes>
           <Footer/>
       </div>
