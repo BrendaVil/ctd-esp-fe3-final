@@ -12,11 +12,14 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to='/home'>Home</Link>{" "}
-      <Link to='/contacto'>Contact</Link>{" "}
-      <Link to='/fav'>Favs</Link>
-      {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <button onClick={handleChangeTheme} style={{background: theme.background, color:theme.font}}>Change Theme</button>
+      <a>DH ODONTO</a>
+      <div>
+        <Link to='/home'>Home</Link>{" "}
+        <Link to='/contacto'>Contact</Link>{" "}
+        <Link to='/fav'>Favs</Link>
+        {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
+        <button onClick={handleChangeTheme} style={{background: theme.background, color:theme.font}}>🌙</button>
+      </div>
     </nav>
   )
 }
